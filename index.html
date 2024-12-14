@@ -1,0 +1,190 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg py-5">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center justify-content-between" href="#">
+                <img class="img-fluid " src="images/logo.png" alt="Cloud Photo">
+                <article class="ps-3 text-white">
+                    <h1 class="fs-6 fw-bold">Weather</h1>
+                    <small>tagline goes here</small>
+                </article>
+            </a>
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  nav-pills  bg-transparent ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item   ">
+                        <a class="nav-link px-4 py-0  active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link px-4 py-0 " href="#">News</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link px-4 py-0 " href="#">Live Camera</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link px-4 py-0 " href="#">Photo</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link px-4 py-0 " href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class=" main-section my-5">
+        <div class="hero">
+            <div class="container ">
+
+                <div class=" my-3 place d-flex position-relative">
+                    <input id="location" class=" form-control rounded-pill py-3 contery" type="text"
+                        placeholder="Find Your Location...">
+                    <input type="button" class=" btn rounded-pill" id="find" value="Find">
+                </div>
+                <span class="d-none feedback "></span>
+            </div>
+        </div>
+
+        <div class="weatherContent position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="todayWeather">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between">
+                                    <span class="today">Tuesday</span>
+                                    <span class="calender">10December</span>
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="location h6"></h2>
+                                    <p class="temprature">
+                                    <div class="d-flex align-items-center justify-content-between ftemp">
+                                        <div>
+                                            <span id="temp"></span><sup>o</sup>c
+
+                                        </div>
+                                        <figure class="m-0">
+                                            <img id="iconImg" src="images/113.png" alt="moon photo">
+                                        </figure>
+                                    </div>
+
+                                    </p>
+                                    <span class="atmosphere"></span>
+                                    <div class="my-3">
+                                        <span class="me-2">
+                                            <img class="me-1" src="images/icon-umberella.png" alt="umberella photo">
+                                            <span class="rainChance"></span>%
+                                        </span>
+                                        <span class="me-2">
+                                            <img class="me-1 " src="images/icon-wind.png" alt="umberella photo">
+                                            <span class="windSpead"></span>km/h
+                                        </span>
+                                        <span>
+                                            <img class="me-1" src="images/icon-compass.png" alt="umberella photo">
+                                            <span class="windDir"></span>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="secondDayWeather">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    <span class="secondDay">Tuesday</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="temprature2 fs-1">
+                                        <figure class="mt-4">
+                                            <img src="images/119.png" alt="moon photo">
+                                        </figure>
+                                        <p class="fs-3 m-0 "><span class="secondDayMaxTemp"></span><sup>o</sup>c</p>
+                                        <small class="fs-6"><span class="secondDayMinTemp"></span><sup>o</sup></small>
+                                    </div>
+                                    <span class="atmosphere2 d-block m-3">Cloudy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="thirddDayWeather">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    <span class="thirdDay">Tuesday</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="temprature3 fs-1">
+                                        <figure class="mt-4">
+                                            <img src="images/119.png" alt="moon photo">
+                                        </figure>
+                                        <p class="fs-3 m-0"><span class="thirdDayMaxTemp"></span><sup>o</sup>c</p>
+                                        <small class="fs-6"><span class="thirdDayMinTemp"></span><sup>o</sup></small>
+                                    </div>
+                                    <span class="atmosphere3 d-block m-3">Cloudy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <footer class="p-5 ">
+        <div class="container ">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class=" my-3 footerSection d-flex position-relative w-75">
+                    <input class=" form-control rounded-pill py-3 " type="text"
+                        placeholder="Enter Your Email to Subscribe...">
+                    <input id="Subscribe" type="button" class="btn rounded-pill " id="subscribe" value="Subscribe">
+                </div>
+                <div class="d-flex">
+                    <span class="fa-stack fa-1x itemIcon ">
+                        <i class="fa-solid fa-circle fa-stack-2x iconCircle"></i>
+                        <i class="fa-brands fa-facebook-f fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                    <span class="fa-stack fa-1x itemIcon ">
+                        <i class="fa-solid fa-circle fa-stack-2x iconCircle"></i>
+                        <i class="fa-brands fa-twitter fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                    <span class="fa-stack fa-1x itemIcon ">
+                        <i class="fa-solid fa-circle fa-stack-2x iconCircle"></i>
+                        <i class="fa-brands fa-google fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                    <span class="fa-stack fa-1x itemIcon ">
+                        <i class="fa-solid fa-circle fa-stack-2x iconCircle"></i>
+                        <i class="fa-brands fa-pinterest fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                </div>
+            </div>
+            <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
